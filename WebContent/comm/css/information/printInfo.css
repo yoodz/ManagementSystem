@@ -1,12 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .redBtn {
-          
-           height: 23px;
-           text-align: center;
-           border-top-left-radius :5px ;
-           border-top-right-radius :5px ;
-           border-bottom-left-radius :5px ;
-           border-bottom-right-radius :5px ;
-           background: #d20c41;
-           color: white;
-           border: 0px;
+   height: 23px;
+   text-align: center;
+   border-top-left-radius :5px ;
+   border-top-right-radius :5px ;
+   border-bottom-left-radius :5px ;
+   border-bottom-right-radius :5px ;
+   background: #d20c41;
+   color: white;
+   border: 0px;
+}
+
+.error {
+  color: red;
+}
+
+.main_content {
+   position: relative;
+   width: 100%;
+   height: 53%;
+   background-color: #10b999;
+}
+
+.input-style {
+  width: 317px;
+  height: 27px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+}
+
+.input-content {
+   position: absolute;
+   width: 400px;
+   background: white;
+   border-radius: 4px;
+   height: 300px;
+   box-shadow: grey 0 0 5.3px;
+   right: 135px;
+   bottom: -34%;
+}
+
+.input-div {
+  width: 317px;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid #b5b5b5;
 }
