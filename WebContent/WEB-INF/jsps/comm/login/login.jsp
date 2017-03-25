@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/personnel/comm/css/information/printInfo.css">
 <title>Insert title here</title>
-
 </head>
 <body>
 
 <jsp:include page="/comm/resource/comm/login.html"></jsp:include>
-<span id="result_a">${result }</span>
+<span id="result_a" class="error-message">${result }</span>
 <script type="text/javascript">
 
 document.getElementById("result_").innerHTML=document.getElementById("result_a").innerHTML;

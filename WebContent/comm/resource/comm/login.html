@@ -51,11 +51,14 @@ jQuery().ready(function() {
     $("#youk").css("height",$(document).height());
 });
 </script>
+
 </head>
 
 <body>
   <div class="main_content">
-  
+  <div class="name-style">
+    <span>员工管理系统</span>
+  </div>
     <div class="input-content">
       <form action="log.do" method="post">
           <input type="hidden" name="method" value="login">
@@ -66,8 +69,8 @@ jQuery().ready(function() {
             <input class="input-style" placeholder="请输入密码" type="password" name="password">
           </div>
           <div class="button-content">
-            <input type="submit" class="base-button" value="submit"/></td>
-            <input type="reset" class="base-button" value="reset"/></td>
+            <input type="reset" class="base-button" value="重置"/></td>
+            <input type="submit" class="base-button" value="提交"/></td>
           </div>
       </form>
     </div>

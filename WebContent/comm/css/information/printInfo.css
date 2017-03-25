@@ -30,7 +30,6 @@ body {
 }
 
 .input-style {
-  width: 317px;
   height: 27px;
   border: 0;
   outline: none;
@@ -38,18 +37,18 @@ body {
 }
 
 .input-content {
-   position: absolute;
-   width: 360px;
-   background: white;
-   border-radius: 4px;
-   height: 300px;
-   box-shadow: grey 0 0 5.3px;
-   right: 135px;
-   bottom: -34%;
+  position: absolute;
+  width: 320px;
+  background: white;
+  border-radius: 4px;
+  height: 287px;
+  box-shadow: grey 0 0 5.3px;
+  right: 135px;
+  bottom: -32%;
 }
 
 .input-div {
-  width: 317px;
+  width: 80%;
   position: relative;
   margin: 0 auto;    
   margin-top: 28px;
@@ -65,10 +64,27 @@ body {
   height: 45px;
   border: 0;
   border-radius: 4px;
-  background-color: #10b999;
+  background-color: #4b7598;
+  color: white;
+  font-size: 20px;
 }
 
 .button-content {
-  margin-top: 27px;
-  margin-left: 20px;
+  margin-top: 39px;
+  margin-right: 30px;
+  float: right;
+}
+
+.name-style {
+  padding-top: 244px;
+  color: white;
+  font-size: 45px;
+  margin-left: 324px;
+}
+
+.error-message {
+  position: absolute;
+  top: 187px;
+  right: 178px;
+  color: red;
 }
