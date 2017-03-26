@@ -69,9 +69,9 @@ a img {
         </table></td>
         <td width="248" background="/personnel/comm/images/comm/main_11.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td width="16%"><span class="STYLE5"></span></td>
+            <!--<td width="16%"><span class="STYLE5"></span></td>
             <td width="75%"><div align="center"><span class="STYLE7">By Jessica (<a href="http://Www.865171.cn" target="_blank">Www.865171.cn</a>)</span></div></td>
-            <td width="9%">&nbsp;</td>
+            <td width="9%">&nbsp;</td>-->
           </tr>
         </table></td>
       </tr>
