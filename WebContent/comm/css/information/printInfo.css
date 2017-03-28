@@ -44,7 +44,7 @@ body {
   height: 287px;
   box-shadow: grey 0 0 5.3px;
   right: 135px;
-  bottom: -32%;
+  bottom: -16%;
 }
 
 .input-div {
@@ -76,15 +76,15 @@ body {
 }
 
 .name-style {
-  padding-top: 244px;
+  padding-top: 21%;
   color: white;
-  font-size: 45px;
-  margin-left: 324px;
+  font-size: 51px;
+  margin-left: 20%;
 }
 
 .error-message {
   position: absolute;
-  top: 187px;
+  top: 31%;
   right: 178px;
   color: red;
 }
