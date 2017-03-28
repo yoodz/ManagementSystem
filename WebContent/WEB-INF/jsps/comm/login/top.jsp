@@ -67,12 +67,11 @@ a img {
             <td>&nbsp;</td>
           </tr>
         </table></td>
-        <!--<td width="248" background="/personnel/comm/images/comm/main_11.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <td width="248" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td width="16%"><span class="STYLE5"></span></td>
-            <td width="75%"><div align="center"><span class="STYLE7">By Jessica (<a href="http://Www.865171.cn" target="_blank">Www.865171.cn</a>)</span></div></td>
+            <td width="75%"><div align="center"><span class="STYLE7">欢迎你：${operater.opName } &nbsp;用户角色：管理员</span></div></td>
             <td width="9%">&nbsp;</td>
-          </tr>-->
+          </tr>
         </table></td>
       </tr>
     </table></td>
@@ -88,10 +87,9 @@ a img {
             <td width="33%">&nbsp;</td>
           </tr>
         </table></td>
-        <td width="39"><img src="/personnel/comm/images/comm/main_30.gif" width="39" height="30" /></td>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td height="20" valign="bottom"><span class="STYLE1">当前登录用户：${operater.opName } &nbsp;用户角色：管理员</span></td>
+            <!--<td height="20" valign="bottom"><span class="STYLE1">当前登录用户：${operater.opName } &nbsp;用户角色：管理员</span></td>-->
             <td valign="bottom" class="STYLE1"><div align="right"></div></td>
           </tr>
         </table></td>
