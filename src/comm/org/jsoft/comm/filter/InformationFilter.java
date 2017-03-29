@@ -44,7 +44,7 @@ public class InformationFilter implements Filter {
 			res.sendRedirect("index.jsp");
 			return;
 		}else{
-		if((!"员工资料".equals(operater.getPopedom()))&&(!"0".equals(operater.getPopedom()))){
+		if((!"工资".equals(operater.getPopedom()))&&(!"员工资料".equals(operater.getPopedom()))&&(!"0".equals(operater.getPopedom()))){
 			req.getRequestDispatcher("error.jsp").forward(req, res);
 			return;
 		}}

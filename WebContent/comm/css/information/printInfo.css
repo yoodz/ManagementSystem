@@ -16,6 +16,7 @@ body {
    background: #d20c41;
    color: white;
    border: 0px;
+   cursor: pointer;
 }
 
 .error {
