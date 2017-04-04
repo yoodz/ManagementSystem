@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-权限不足
+权限不足 请与管理员联系
 </body>
 </html>

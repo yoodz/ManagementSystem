@@ -186,7 +186,7 @@ public class BakService implements IBakService {
 			String savepath = properties.getProperty("savepath");
 			String dbname = properties.getProperty("dbname");
 			//"cmd.exe /c \"C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin\\mysqldump\" -h localhost -uroot -p123456  personnel > d:\\mysql.sql";
-			
+			System.err.println("mysqlpath -----------------"+mysqlpath);
 			String cmd = "cmd.exe /c \""+mysqlpath+"\\bin\\mysql\" -h "+db+" -u"+user+" -p"+password+" "+dbname+" < "+path+savepath+"\\"+fileName;
 			System.out.println(cmd);
 			Runtime runtime = Runtime.getRuntime();
