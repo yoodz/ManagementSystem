@@ -245,8 +245,8 @@ margin-right: 5px;
 								<td width="45%" class="recordSet"><div align="left">
 										<c:if test="${pg.currentPage <= pg.allPage}">
 											<span class="STYLE22">&nbsp;&nbsp;&nbsp;&nbsp;共有<strong>
-													${pg.num}</strong> 条记录，当前第<strong>${pg.currentPage}</strong> 页，共 <strong>${pg.allPage}</strong>
-												页
+													${pg.num}</strong> 条记录，当前第<strong>${pg.currentPage}</strong> 页
+													<%-- ，共 <strong>${pg.allPage}</strong>页 --%>
 											</span>
 										</c:if>
 									</div></td>
