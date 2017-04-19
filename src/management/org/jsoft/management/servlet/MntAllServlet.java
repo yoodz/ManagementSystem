@@ -60,7 +60,7 @@ public class MntAllServlet extends BaseServlet{
 		String beginWorkDate2=req.getParameter("beginWorkDate2");
 		String workState=req.getParameter("workState");
 		if(pNo.isEmpty()==false)
-			m1.put("personnelId",pNo);
+			m1.put("personnelNo",pNo);
 		if(pName.isEmpty()==false)
 			m1.put("personnelName",pName);
 		if(engageForm.isEmpty()==false)
