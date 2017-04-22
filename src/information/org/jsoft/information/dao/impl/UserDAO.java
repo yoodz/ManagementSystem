@@ -35,7 +35,7 @@ public class UserDAO extends BaseDAO implements IUserDAO
 	public List<Personnelinfo> queryByPersonnelId(String id) {
 		Session session = getSession();
 		session.beginTransaction();
-		Query query = session.createQuery("FROM Personnelinfo WHERE isDelete = 0 and id="+id);
+		Query query = session.createQuery("FROM Personnelinfo WHERE isDelete = 0 and personnelId ='"+id + "'");
 		List<Personnelinfo> personInfo = query.list();
 		session.getTransaction().commit();
 		session.close();

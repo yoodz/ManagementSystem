@@ -252,10 +252,10 @@ function(){
 
         <%-- <a href="djr.sys?method=restore&&fileName=${bak.path }" class="normalrestore">还原</a> --%>
 
-         |<a href="setofbook.sal?method=jumpEdit&&deptJobRelId=${deptJobRel.deptJobRelId }" class="normaledit" ">编辑</a>
+         <%-- |<a href="setofbook.sal?method=jumpEdit&&deptJobRelId=${deptJobRel.deptJobRelId }" class="normaledit" ">编辑</a> --%>
         <%--  |<a href="djr.sal?method=jumpBakDetail&&id=${bak.bakId }" class="normalsee" >查看</a>  --%>
 
-         |<a href="setofbook.sal?method=jumpEdit&&deptJobRelId=${deptJobRel.deptJobRelId }" class="normaledit" ">编辑</a>
+         <a href="setofbook.sal?method=jumpEdit&&deptJobRelId=${deptJobRel.deptJobRelId }" class="normaledit" ">编辑</a>
         <%--  |<a href="djr.sys?method=jumpBakDetail&&id=${bak.bakId }" class="normalsee" >查看</a>  --%>
 
         </div></td>
