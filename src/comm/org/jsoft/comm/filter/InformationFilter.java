@@ -1,6 +1,7 @@
 package org.jsoft.comm.filter;
 
 import java.io.IOException;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -16,9 +17,9 @@ import org.jsoft.comm.vo.Operater;
  * Servlet Filter implementation class EncodeFilter
  */
 public class InformationFilter implements Filter {
-	
+
     /**
-     * Default constructor. 
+     * Default constructor.
      */
     public InformationFilter() {
         // TODO Auto-generated constructor stub
@@ -27,6 +28,7 @@ public class InformationFilter implements Filter {
 	/**
 	 * @see Filter#destroy()
 	 */
+	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
 	}
@@ -34,6 +36,7 @@ public class InformationFilter implements Filter {
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
+	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
@@ -44,7 +47,7 @@ public class InformationFilter implements Filter {
 			res.sendRedirect("index.jsp");
 			return;
 		}else{
-		if((!"人事".equals(operater.getPopedom()))&&(!"系统".equals(operater.getPopedom()))&&(!"工资".equals(operater.getPopedom()))&&(!"员工资料".equals(operater.getPopedom()))&&(!"0".equals(operater.getPopedom()))){
+		if((!"人事".equals(operater.getPopedom()))&&(!"统计".equals(operater.getPopedom()))&&(!"系统".equals(operater.getPopedom()))&&(!"工资".equals(operater.getPopedom()))&&(!"员工资料".equals(operater.getPopedom()))&&(!"0".equals(operater.getPopedom()))){
 			req.getRequestDispatcher("error.jsp").forward(req, res);
 			return;
 		}}
@@ -55,6 +58,7 @@ public class InformationFilter implements Filter {
 	/**
 	 * @see Filter#init(FilterConfig)
 	 */
+	@Override
 	public void init(FilterConfig fConfig) throws ServletException {
 
 	}

@@ -4,13 +4,13 @@ function getContent() {
 	var input2Len = input2.replace(/[^x00-xff]/g, "xx").length;
 	var spans=document.getElementsByTagName("span");//获得所有的span
 	
-	if (input2Len > 5) {
-		spans[1].innerHTML="内容字的个数过多啊亲，请重新输入";
+	if (input2Len > 20) {
+		spans[1].innerHTML="字数过多，请重新输入";
 	} else if (input2Len <= 5 && input2Len > 0) {
 		spans[1].innerHTML="";
 	}
 	if (input2Len == 0) {
-		spans[1].innerHTML="没有内容啊亲，请重新输入";
+		spans[1].innerHTML="内容不能为空";
 	}
 }
 function getTime() {
@@ -20,7 +20,7 @@ function getTime() {
 	var spans=document.getElementsByTagName("span");//获得所有的span
 	
 	if (input3Len == 0) {
-		spans[2].innerHTML="没有时间啊亲，请重新添加";
+		spans[2].innerHTML="内容不能为空";
 	}else if(input3Len>0){
 		spans[2].innerHTML="";
 	}
@@ -46,7 +46,7 @@ function submitForm() {
 	if (spanresult == 0) {
 		document.getElementById('formid').submit();
 	} else {
-		alert("请按规则正确填写再提交啊亲~.~");
+		alert("请按规则正确填写再提交!");
 	}
 }
 
