@@ -4,7 +4,7 @@ function getContent() {
 	var input2Len = input2.replace(/[^x00-xff]/g, "xx").length;
 	var spans=document.getElementsByTagName("span");//获得所有的span
 	
-	if (input2Len > 5) {
+	if (input2Len > 20) {
 		spans[1].innerHTML="字数过多，请重新输入";
 	} else if (input2Len <= 5 && input2Len > 0) {
 		spans[1].innerHTML="";
