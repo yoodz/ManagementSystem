@@ -15,7 +15,7 @@ public class DeptJobRelDAO extends BaseDAO<DeptJobRel> implements IDeptJobRelDAO
 	}
 	
 	public DeptJobRel queryDeptJobRelFromDeptJobRelId(String deptjobrelid){
-		String hql = "from DeptJobRel where  deptJobRelId =  "+deptjobrelid   ;
+		String hql = "from DeptJobRel where  deptJobRelId = '"+deptjobrelid  + "'" ;
 		DeptJobRel l=this.get(hql);
 		if (l==null) System.out.println("deptjobrel 获取失败");
 		return l;

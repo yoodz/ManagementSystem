@@ -17,6 +17,7 @@ import org.jsoft.comm.vo.Salary;
 import org.jsoft.information.service.PageService;
 import org.jsoft.information.service.UserService;
 import org.jsoft.information.vo.Page;
+import org.jsoft.person.dao.impl.PersonInfoDictionDAO;
 
 public class UserServlet extends BaseServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,11 +26,13 @@ public class UserServlet extends BaseServlet {
 		PageService pageService = new PageService();
 		Page page = new Page();
 		String way = req.getParameter("way");
-		List<Personnelinfo> personInfo = null;
+		List<Personnelinfo> personInfo1 = null;
 		List<Personnelinfo> showPersonInfo = new ArrayList<Personnelinfo>();
 		req.getSession().setAttribute("showPersonInfo", showPersonInfo);
+		PersonInfoDictionDAO pidDAO = new PersonInfoDictionDAO();
 		try {
-			personInfo = userService.queryAll();
+			personInfo1 = userService.queryAll();
+			List<Personnelinfo> personInfo = pidDAO.buildPersonByDiction(personInfo1);
 			pageService.setPage(page,personInfo);
 			pageService.getShowPage(page, showPersonInfo, personInfo, page.getCurPage(), way);
 		} catch (Exception e) {
@@ -38,7 +41,7 @@ public class UserServlet extends BaseServlet {
 		}
 		req.getSession().setAttribute("flag","Yes");
 		req.getSession().setAttribute("page", page);
-		req.getSession().setAttribute("personInfo", personInfo);
+		req.getSession().setAttribute("personInfo", personInfo1);
 		return "jsps/information/personInfo.jsp";
 	}
 	public String queryByPersonnelId(HttpServletRequest req, HttpServletResponse resp) {

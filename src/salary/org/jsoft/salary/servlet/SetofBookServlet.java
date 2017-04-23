@@ -57,6 +57,7 @@ public class SetofBookServlet extends BaseServlet
 		double trafficSalary = Double.parseDouble(req.getParameter("traffic"));
 		double basicSalary = Double.parseDouble(req.getParameter("base"));
 		double allSalary = Double.parseDouble(req.getParameter("all"));
+		System.err.println("---------------");
 		System.out.println(bonus);
 		System.out.println(lunchSalary);
 		System.out.println(trafficSalary);
