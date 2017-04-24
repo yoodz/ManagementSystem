@@ -74,8 +74,14 @@ public class MntAllServlet extends BaseServlet{
 		persons=gservice.packSome(m1,m2);
 		req.getSession().setAttribute("persons1", persons);
 		req.getSession().setAttribute("stateGeneral", "ok");
-		req.getSession().setAttribute("total",persons.size()-1);
-		req.getSession().setAttribute("i",0);
+		req.getSession().setAttribute("total", persons.size()-1);
+		req.getSession().setAttribute("i", 0);
+		req.getSession().setAttribute("pNo", pNo);
+        req.getSession().setAttribute("pName", pName);
+        req.getSession().setAttribute("engageForm", engageForm);
+        req.getSession().setAttribute("beginWorkDate1", beginWorkDate1);
+        req.getSession().setAttribute("beginWorkDate2", beginWorkDate2);
+        req.getSession().setAttribute("workState", workState);
 		return "jsps/management/mntAll.jsp";
 	}
 	public String pickUpBackup(HttpServletRequest req,HttpServletResponse resp) {

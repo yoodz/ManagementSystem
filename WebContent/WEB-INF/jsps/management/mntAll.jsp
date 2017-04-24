@@ -191,7 +191,7 @@ margin-right: 5px;
 				<td><input type="submit" value="" id="pagejump"></td>
 			</tr>
 			<tr align="center">
-			  <td><div class="downRight"><a href="#"><font size="2px;" color="#295568;">导出Excel</font></a></div></td>
+				<td><div class="downRight"><a href="personnelRecords.man?method=exporeExcel&pNo=${pNo}&pName=${pName}&engageForm=${engageForm}&beginWorkDate1=${beginWorkDate1}&beginWorkDate2=${beginWorkDate2}&workState=${workState}"><font size="2px;" color="#295568;">导出Excel</font></a></div></td>
 			</tr>
 		</table>
 	</form>

@@ -32,7 +32,6 @@ public class ExcelReader {
 	 * 
 	 * 3.BeginLoadExcel 方法 为用户从外部调用的方法 使用的时候用户只用使用这个方法就行
 	 * 
-	 * @author 李智 Lychee
 	 */
 
 	public List<List<String>> readExcel(String ExcelPath) {

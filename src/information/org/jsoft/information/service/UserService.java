@@ -10,6 +10,7 @@ import org.jsoft.comm.vo.Personnelremove;
 import org.jsoft.comm.vo.Personneltrain;
 import org.jsoft.comm.vo.Salary;
 import org.jsoft.information.dao.impl.UserDAO;
+import org.jsoft.person.dao.impl.PersonInfoDictionDAO;
 
 public class UserService {
 
@@ -23,10 +24,11 @@ public class UserService {
 	}
 	
 	public List<Personnelinfo> queryByPersonnelId(String id) {
-		
+	    PersonInfoDictionDAO pidDAO = new PersonInfoDictionDAO();
 		List<Personnelinfo> personInfo = userDAO.queryByPersonnelId(id);
+		List<Personnelinfo> personInfo1 = pidDAO.buildPersonByDiction(personInfo);
 		
-		return personInfo;
+		return personInfo1;
 	}
 	
 	public List<Personneltrain> queryTrain() {
