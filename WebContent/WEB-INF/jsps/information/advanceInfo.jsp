@@ -32,18 +32,18 @@
 				<td class="toptr">考评资料</td>
 				<td class="centtr"><A HREF="/personnel/user_info.inf?method=queryAppraise"><input type="button" value="点击查看考评资料" class="redBtn"/></A></td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td class="toptr">调薪资料</td>
 				<td class="centtr"><A HREF="/personnel/user_info.inf?method=querySalary"><input type="button" value="点击查看调薪资料" class="redBtn"/></A></td>
-			</tr>
+			</tr> -->
 			<tr>
 				<td class="toptr">调动资料</td>
 				<td class="centtr"><A HREF="/personnel/user_info.inf?method=queryRemove"><input type="button" value="点击查看调动资料" class="redBtn"/></A></td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td class="toptr">工资信息</td>
 				<td class="centtr"><A HREF="/personnel/user_info.inf?method=querySal"><input type="button" value="点击查看工资信息" class="redBtn"/></A></td>
-			</tr>
+			</tr> -->
 		</table>
 </body>
 

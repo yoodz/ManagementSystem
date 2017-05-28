@@ -19,7 +19,7 @@
 		<table class="toptable_style">
 			<tr>
 				<td width="85%"><img src="/personnel/comm/images/comm/tb.gif" />
-					<span class="title_style">管理人员基本信息列表</span></td>
+					<span class="title_style">员工基本信息列表</span></td>
 				<td><span class="title_style"> <input type="checkbox"
 						name="selectall" id="selectall" onclick="selectAll()"/> 全选/全不选
 				</span> &nbsp;
