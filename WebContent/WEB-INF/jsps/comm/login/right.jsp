@@ -35,7 +35,7 @@ body {
 </style>
 </head>
 <body>
-<h1 class="mian_">欢迎你.</h1>
+<h1 class="mian_">欢迎进入企业员工管理系统!</h1>
 <!-- <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"> -->
 <!--   <tr> -->
 <!--     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0"> -->

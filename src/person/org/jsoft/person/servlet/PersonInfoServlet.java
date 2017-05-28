@@ -31,6 +31,7 @@ public class PersonInfoServlet extends BaseServlet {
 		pg.setNum(personsTemp.size());
 
 		String pgNum = req.getParameter("pgNum");
+
 		String pgPages = req.getParameter("pgPages");
 		String cP = req.getParameter("cP");
 
