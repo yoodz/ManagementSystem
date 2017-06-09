@@ -66,6 +66,14 @@
     <servlet-name>LogServlet</servlet-name>
     <url-pattern>/log.do</url-pattern>
   </servlet-mapping>
+   <servlet>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>org.jsoft.comm.servlet.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/uploadHandle.do</url-pattern>
+  </servlet-mapping>
  <filter>
     <display-name>SystemFilter</display-name>
     <filter-name>SystemFilter</filter-name>
