@@ -29,7 +29,7 @@ import org.jsoft.system.service.impl.OperateLogService;
 import org.jsoft.system.service.impl.OperaterService;
 
 public class PersonnelRecordsServlet extends BaseServlet {
-    private static final String xlsFile="C:\\"; 
+    private static final String xlsFile="C:\\";
     private static final long serialVersionUID = 1L;
     private IOperaterService operaterService = new OperaterService();
     private IOperateLogService operateLogService = new OperateLogService();    

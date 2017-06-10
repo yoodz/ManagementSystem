@@ -26,7 +26,7 @@
                     src="/personnel/comm/images/comm/add.gif"> <a
                     class="titleButtonText" onClick="locking()">新增</a>
                     <label onClick="locking3()" class="titleButtonText1">导入Excel</label><!-- 路径怎么找？ -->
-                    <a href="" class="titleButtonText2">导出Excel</a>
+                    <a href="personTrain.per?method=exporeExcel" class="titleButtonText2">导出Excel</a>
             </div>
         </div>
         <div id="query" align="center">

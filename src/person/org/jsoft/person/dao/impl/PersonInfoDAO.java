@@ -75,6 +75,13 @@ public class PersonInfoDAO extends BaseDAO<Personnelinfo> implements IPersonInfo
 		personnelinfo=this.get(hql);
 		return personnelinfo;
 	}
+	
+	   public Personnelinfo queryId(String personnelId) {
+	        String hql = "from Personnelinfo where personnelId='"+personnelId+"'";
+	        Personnelinfo personnelinfo=new Personnelinfo();
+	        personnelinfo=this.get(hql);
+	        return personnelinfo;
+	    }
 
 	public static void main(String[] args) {    //  测试可用
 		PersonInfoDAO piDAO = new PersonInfoDAO();

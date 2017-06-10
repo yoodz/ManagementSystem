@@ -1,12 +1,16 @@
 package org.jsoft.person.servlet;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,11 +18,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.jsoft.comm.servlet.BaseServlet;
 import org.jsoft.comm.util.ExcelReader;
 import org.jsoft.comm.util.ExcelUtil;
+import org.jsoft.comm.util.ExportExcel;
 import org.jsoft.comm.util.MailUtil;
 import org.jsoft.comm.vo.Personnelinfo;
 import org.jsoft.comm.vo.Personneltrain;
 import org.jsoft.comm.vo.Operater;
+import org.jsoft.management.service.impl.MntAllService;
 import org.jsoft.person.dao.impl.PersonInfoDAO;
+import org.jsoft.person.dao.impl.PersonTrainDAO;
 import org.jsoft.person.service.impl.PersonInfoService;
 import org.jsoft.person.service.impl.PersonTrainService;
 import org.jsoft.system.service.IOperateLogService;
@@ -32,6 +39,8 @@ import org.springframework.web.multipart.MultipartFile;
  */
 public class PersonTrainServlet extends BaseServlet {
     private static final long serialVersionUID = 1L;
+    private PersonTrainDAO pt = new PersonTrainDAO();
+    private static final String xlsFile="C:\\"; 
     private static String departmentName="";
     private static String jobName="";
     private PersonTrainService pts = new PersonTrainService();
@@ -122,7 +131,7 @@ public class PersonTrainServlet extends BaseServlet {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ personnelNo +"您已被管理员添加了新的培训，内容是："+ personnelTrainConten +"。时间为 "+ personnelTrainDate + "。请记得准时参加。");
+        MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ personnelNo +"您已被管理员添加了新的培训，内容是："+ personnelTrainConten +"。时间为 "+ personnelTrainDate + "。请按时参加培训，谢谢。");
 //        /*日志*/
 //        String info="执行了对员工培训表增加编号为"+personnelNo+"培训人的操作";
 //        operateLogService.add(operaterService.getById(((Operater)req.getSession().getAttribute("operater")).getOpId()), info);
@@ -186,6 +195,18 @@ public class PersonTrainServlet extends BaseServlet {
             return redirPath + "personTrain.per?method=update&state=1&personnelTrainId="+personnelTrainId+"&personnelName="+personnelName+"&personnelTrainConten="+personnelTrainConten+"&personnelTrainDate="+ptdTemp+"&personnelTrainRemark="+personnelTrainRemark+"";
         }
 
+    }
+    
+    public String exporeExcel(HttpServletRequest req,HttpServletResponse resp) {
+
+        List<Personneltrain> setAllPageLs = pt.findAllNoPage();
+        try {
+            System.err.println("准备开始导出excel");
+            //ExportExcel.exportExcel(strMeaning, strName, ls, os);  
+        } catch (Exception  e1){  
+            e1.getStackTrace();  
+        }
+        return "jsps/management/PersonnelRecords/outputSuccess.jsp";
     }
     
 

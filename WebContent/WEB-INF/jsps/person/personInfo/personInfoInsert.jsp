@@ -191,7 +191,7 @@
 			        
 			        <tr>
 			            <td class="tdLeft">
-			                <div class="tdLeftText">Email</div>
+			                <div class="tdLeftText">* Email</div>
 			            </td>
 			            <td class="tdRight">
 			                <input name="EMail" type="text" onblur="EMailCheck();"/>
