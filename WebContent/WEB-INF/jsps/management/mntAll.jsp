@@ -97,7 +97,7 @@ margin-right: 5px;
 <td>姓名：</td><td align="left"><input type="text" name="pName"></td>
 </tr>
 <tr>
-<td>部门：</td><td align="left"><input type="text" name="engageForm"></td>
+<td>聘用形式：</td><td align="left"><input type="text" name="engageForm"></td>
 <td>在职状态：</td><td align="left"><select name="workState"> 
         <option value=""></option>
         <option value="10060001">在职</option>
@@ -137,7 +137,7 @@ margin-right: 5px;
          <th>年龄</th>
          <th>身份证号</th>
          <th>联系电话</th>
-         <th>部门</th>
+         <th>聘用形式</th>
          <th>最高学历</th>
          <th>入职日期</th>
          <th>工号</th>

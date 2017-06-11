@@ -187,7 +187,7 @@ public class PersonnelRecordsServlet extends BaseServlet {
       try {  
           FileOutputStream os = new FileOutputStream(pathString);
           System.err.println(os);
-          String[] strMeaning={"编号","姓名 ", "性别","年龄","身份证号","联系电话","部门","最高学历","入职日期","工号","积分"};  
+          String[] strMeaning={"编号","姓名 ", "性别","年龄","身份证号","联系电话","聘用形式","最高学历","入职日期","工号","积分"};  
           String[] strName={"personnelNo","personnelName","personnelSex", "age", "identityId", "phone", "engageForm", "tipTopDegree", "beginWorkDate", "workId", "score"};  
           List<Personnelinfo> ls=new ArrayList<Personnelinfo>();  
           for(Personnelinfo personnelinfo : personsList){

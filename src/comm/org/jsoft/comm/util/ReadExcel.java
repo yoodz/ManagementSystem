@@ -56,7 +56,7 @@ public class ReadExcel {
                     }
                     PersonInfoDAO piDAO = new PersonInfoDAO();
                     Personnelinfo pi = piDAO.queryId(PersonnelId);
-                    MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ pi.getPersonnelNo() +"您已被管理员添加了新的培训，内容是："+ PersonnelTrainConten +"。时间为 "+ personnelTrainDate1 + "。请记得准时参加。");
+                    //MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ pi.getPersonnelNo() +"您已被管理员添加了新的培训，内容是："+ PersonnelTrainConten +"。时间为 "+ personnelTrainDate1 + "。请记得准时参加。");
                     
                 }
             }

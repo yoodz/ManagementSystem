@@ -46,7 +46,7 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 			}
 			e.printStackTrace();
 		}finally{
-			if(session.isOpen()||session!=null){
+			if(session.isOpen() || session != null){
 				/*closeSession();*/
 			}
 		}

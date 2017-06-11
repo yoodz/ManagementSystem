@@ -61,6 +61,7 @@ public class PersonTrainDAO extends BaseDAO<Personneltrain> implements
 	
 	public void add(Personneltrain pt) {				
 		this.save(pt);
+		System.err.println("执行了一次 执行了一次");
 		System.out.println("执行了DAO的add");
 	}
 
