@@ -200,6 +200,7 @@ public class PersonTrainServlet extends BaseServlet {
     public String exporeExcel(HttpServletRequest req,HttpServletResponse resp) {
 
         List<Personneltrain> setAllPageLs = pt.findAllNoPage();
+        
         try {
             System.err.println("准备开始导出excel");
             //ExportExcel.exportExcel(strMeaning, strName, ls, os);  

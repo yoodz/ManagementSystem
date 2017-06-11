@@ -36,7 +36,7 @@ public class ReadExcel {
             int rows=rs.getRows();//得到所有的行
             
             System.out.println(clos+" rows:"+rows);
-            for (int i = 0; i < rows; i++) {
+            for (int i = 1; i < rows+1; i++) {
                 for (int j = 0; j < clos; j++) {
                     //第一个是列数，第二个是行数
                     String PersonnelId = rs.getCell(j++, i).getContents();//默认最左边编号也算一列 所以这里得j++
