@@ -56,7 +56,7 @@ public class ReadExcel {
                     }
                     PersonInfoDAO piDAO = new PersonInfoDAO();
                     Personnelinfo pi = piDAO.queryId(PersonnelId);
-                    //MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ pi.getPersonnelNo() +"您已被管理员添加了新的培训，内容是："+ PersonnelTrainConten +"。时间为 "+ personnelTrainDate1 + "。请记得准时参加。");
+                    MailUtil.sendEmail(pi.getEMail(), "企业内部员工培训通知", "您好，"+ pi.getPersonnelNo() +"您已被管理员添加了新的培训，内容是："+ PersonnelTrainConten +"。时间为 "+ personnelTrainDate1 + "。请记得准时参加。");
                     
                 }
             }
@@ -65,67 +65,5 @@ public class ReadExcel {
         } 
         return list;
         
-//        // 循环工作表
-//        for (int numSheet = 0; numSheet < workbook.getNumberOfSheets(); numSheet++) {
-//            System.err.println("一共有多少表"+workbook.getNumberOfSheets());
-//            HSSFSheet hssfSheet = workbook.getSheetAt(numSheet);
-//            if (hssfSheet == null) {
-//                System.err.println("hssfSheet是空的");
-//                continue;
-//            }
-//            // 循环行
-//            for (int rowNum = 1; rowNum <= hssfSheet.getLastRowNum(); rowNum++) {
-//                HSSFRow hssfRow = hssfSheet.getRow(rowNum);
-//                if (hssfRow == null) {
-//                    continue;
-//                }
-//
-//                // 将单元格中的内容存入集合
-//                Personneltrain personneltrain = new Personneltrain();
-//
-//                HSSFCell cell = hssfRow.getCell(0);
-//                if (cell == null) {
-//                    continue;
-//                }
-//                Personnelinfo p = new Personnelinfo();
-//                // 为了用这个类里的setPersonnelId方法,这里id是主键，非空，必须set
-//                System.err.println("表格里的第一个值"+cell.getStringCellValue());
-//                p.setPersonnelId(cell.getStringCellValue());
-//                personneltrain.setPersonnelinfo(p);
-//
-//                cell = hssfRow.getCell(1);
-//                if (cell == null) {
-//                    continue;
-//                }
-//                
-//                Timestamp personnelTrainDate = null;
-//                try {
-//                    personnelTrainDate = new Timestamp(new SimpleDateFormat(
-//                            "yyyy-MM-dd HH:mm:ss").parse(cell.getStringCellValue()).getTime());
-//                } catch (ParseException e) {
-//                    e.printStackTrace();
-//                }
-//                System.err.println("表格里的第二个值"+personnelTrainDate);
-//                personneltrain.setPersonnelTrainDate(personnelTrainDate);
-//
-//                cell = hssfRow.getCell(2);
-//                if (cell == null) {
-//                    continue;
-//                }
-//                System.err.println("表格里的第三个值" + cell.getStringCellValue());
-//                personneltrain.setPersonnelTrainConten(cell.getStringCellValue());
-//                
-//                cell = hssfRow.getCell(3);
-//                if (cell == null) {
-//                    continue;
-//                }
-//                System.err.println("表格里的第四个值" + cell.getStringCellValue());
-//                personneltrain.setPersonnelTrainRemark(cell.getStringCellValue());
-//                personneltrain.setIsDelete(0);;
-//                pts.add(p.getPersonnelId(), personneltrain.getPersonnelTrainConten(), personneltrain.getPersonnelTrainDate().toString(),
-//                        personneltrain.getPersonnelTrainRemark());
-//                list.add(personneltrain);
-//            }
-//        }
     }
 }
